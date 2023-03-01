@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 7 - Exercício HTML - JS</title>
+
+    <link type="text/css" rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    
+    <section id="contact">
+        <div class="container">
+            <fieldset>
+                <h2><i>Contato</i></h2>
+            <div class="formulario">
+                <form id="contato">
+                    <label for="nome"><b>Nome</b></label>
+                        <Input type="text" class="text" id="nome" name="nome" required placeholder="Nome Completo" /></Input>
+                        <p class="erro">Nome Completo</p>
+                    <label for="email"><b>E-mail</b></label>
+                        <Input type="email" placeholder="seu@email.com" class="text" id="email" required/></Input>
+                    <label for="tel"><b>Telefone</b></label>
+                        <Input type="tel" placeholder="(xx)xxxxx-xxxx" class="text" id="tel" required/></Input>
+                    
+                        <div class="marca-campo">
+                                <label><b>Qual a sua favorita?</b></label>
+                    
+                            <label for="A">
+                                <b><Input type="radio"  name="Campo" id="A" value="A">A</b>
+                            </label>
+                            <label for="B">
+                                <b><Input type="radio"  name="Campo" id="B" value="B">B</b>
+                            </label>
+                        </div>
+                    
+                    <textarea rasw="10" cols="40" maxlength="500" placeholder="Sua mensagem" id="mensagem" (opcional)></textarea>
+                    <button  class="cadastro" id="cadastro" type="submit">Enviar</button>
+                </form>
+                <div class="mensagem-oculta">
+                    <p class="sucesso"></p>
+
+                    
+                </div>
+            </div>
+            </fieldset>
+        </div>
+    </section>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
